@@ -35,7 +35,7 @@ void *vector_table[] __attribute__ ((section(".vectors"))) = {
 	WDT_Handler,    /* 4  Watchdog Timer */
 	PMC_Handler,    /* 5  PMC */
 	EFC_Handler,    /* 6  EFC */
-	Reset_Handler,  /* 7  Reserved */
+	0,              /* 7  Reserved */
 	UART0_Handler,  /* 8  UART0 */
 	UART1_Handler,  /* 9  UART1 */
 	SMC_Handler,    /* 10 SMC */
@@ -44,8 +44,8 @@ void *vector_table[] __attribute__ ((section(".vectors"))) = {
 	PIOC_Handler,   /* 13 Parallel IO Controller C */
 	USART0_Handler, /* 14 USART 0 */
 	USART1_Handler, /* 15 USART 1 */
-	Reset_Handler,  /* 16 Reserved */
-	Reset_Handler,  /* 17 Reserved */
+	0,              /* 16 Reserved */
+	0,              /* 17 Reserved */
 	HSMCI_Handler,  /* 18 HSMCI */
 	TWI0_Handler,   /* 19 TWI 0 */
 	TWI1_Handler,   /* 20 TWI 1 */
@@ -63,7 +63,7 @@ void *vector_table[] __attribute__ ((section(".vectors"))) = {
 	CRCCU_Handler,  /* 32 CRC Calculation Unit */
 	ACC_Handler,    /* 33 Analog Comparator */
 	UDP_Handler,    /* 34 USB Device Port */
-	Reset_Handler   /* 35 not used */
+	0               /* 35 not used */
 };
 
 void Reset_Handler(void)

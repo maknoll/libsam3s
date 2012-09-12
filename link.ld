@@ -4,6 +4,7 @@ MEMORY
 	SRAM (rwx) : ORIGIN = 0x20000000, LENGTH = 48k
 }
 
+SEARCH_DIR (libsam3s)
 GROUP(libsam3s.a)
 ENTRY(Reset_Handler)
 
